@@ -29,7 +29,7 @@ website:
 format:
   html:
     theme:
-      - cosmo
+      - quartz
       - brand
     css: styles.css
     toc: true

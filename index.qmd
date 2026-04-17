@@ -2,14 +2,14 @@
 title: "Lab 3 Preston Hindman"
 ---
 
-This is a Quarto website.
+This quarto website contains my homeworks 1-8 throughout this semester taking MATH 3190 at Southern Utah University.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
 #| echo: false
 #| eval: true
-library(ggforce)
+library(ggforce) |> suppressPackageStartupMessages()
 
 # 1. Create data for the mouth (a downward arc)
 t <- seq(0, pi, length.out = 100)

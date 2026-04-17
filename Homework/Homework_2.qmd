@@ -11,6 +11,7 @@ urlcolor: blue
 execute: # Will set these as the default for all code chunks
   eval: true
   echo: true
+  cache: true
 editor_options: 
   chunk_output_type: console
 ---
