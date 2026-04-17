@@ -5,10 +5,9 @@ project:
 website:
   title: "Lab 3 Preston Hindman"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
       - href: Homework/Homework_1.qmd
         text: Homework 1
       - href: Homework/Homework_2.qmd

@@ -37,9 +37,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Lab 3 Preston Hindman",
+    "title": "Lab 3 Preston Hindman MATH 3190",
     "section": "",
-    "text": "This quarto website contains my homeworks 1-8 throughout this semester taking MATH 3190 at Southern Utah University.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead."
+    "text": "This quarto website contains my homeworks 1-8 throughout this semester taking MATH 3190 at Southern Utah University.\n\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead."
   },
   {
     "objectID": "Homework/Homework7.html",

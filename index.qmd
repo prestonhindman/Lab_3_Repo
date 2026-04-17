@@ -1,10 +1,9 @@
 ---
-title: "Lab 3 Preston Hindman"
+title: "Lab 3 Preston Hindman MATH 3190"
 ---
 
 This quarto website contains my homeworks 1-8 throughout this semester taking MATH 3190 at Southern Utah University.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
 #| echo: false
