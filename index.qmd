@@ -1,0 +1,44 @@
+---
+title: "Lab 3 Preston Hindman"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+#| echo: false
+#| eval: true
+library(ggforce)
+
+# 1. Create data for the mouth (a downward arc)
+t <- seq(0, pi, length.out = 100)
+mouth <- data.frame(
+  x = 5 + 1.5 * cos(t),
+  y = 3.5 + 1.0 * sin(t)  # The +sin(t) makes the 'rainbow' shape
+)
+
+t <- seq(0, 2*pi, length.out = 200)
+teardrop_data <- data.frame(
+  x = c(0, 0.5 * sin(t[t > pi/2 & t < 3*pi/2])), # The curved bottom
+  y = c(1, 0.5 * cos(t[t > pi/2 & t < 3*pi/2]))  # The pointed top at (0, 1)
+)
+
+# 2. Shift the teardrop to position it under the eye
+# (Assuming your eye is at x=3.5, y=6.5 from the previous face)
+teardrop_data$x <- teardrop_data$x + 3.5
+teardrop_data$y <- teardrop_data$y + 5
+
+ggplot() +
+  # The Head
+  geom_circle(aes(x0 = 5, y0 = 5, r = 4), size = 1.5, fill = "#EFFD5F") +
+  # The Eyes
+  geom_point(aes(x = c(3.5, 6.5), y = c(6.5, 6.5)), size = 10) +
+  # The Frown
+  geom_path(data = mouth, aes(x = x, y = y), size = 2, lineend = "round") +
+  geom_polygon(data = teardrop_data, aes(x = x, y = y), 
+               fill = "skyblue", color = "black", size = 0.5) +
+  # Coordinate fix to ensure it stays circular
+  coord_fixed() +
+  theme_void()
+```
